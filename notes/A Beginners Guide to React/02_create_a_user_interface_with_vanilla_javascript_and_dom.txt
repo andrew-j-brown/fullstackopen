@@ -1,0 +1,15 @@
+Using vanilla javascript, elements have to be created manually. Select the root element, select the element to create, paste in the content and add a class, and lastly append it as a child.
+
+##########
+
+<script type="text/javascript">
+  const rootElement = document.getElementById("root");
+  const element = document.createElement("div");
+  element.textContent = "Hello World";
+  element.className = "container";
+  rootElement.appendChild(element);
+</script>
+
+##########
+
+It works, but man is it tedious, especially when working with many elements.

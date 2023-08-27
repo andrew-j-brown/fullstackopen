@@ -1,0 +1,29 @@
+Looking back at our code from earlier...
+
+##########
+
+<script type="text/javascript">
+  const rootElement = document.getElementById("root");
+  const element = document.createElement("div");
+  element.textContent = "Hello World";
+  element.className = "container";
+  rootElement.appendChild(element);
+</script>
+
+##########
+
+we can use ReactDOM to render it as a React element.
+
+##########
+
+<script type="text/javascript">
+  const rootElement = document.getElementById("root");
+  const element = React.createElement("div", {
+    children: "Hello World",
+    className: "container",
+  })
+
+  ReactDOM.render(element, rootElement);
+</script>
+
+...React allows for creating the elements, and ReactDOM allows the elements to be rendered to the DOM.

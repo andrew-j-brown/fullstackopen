@@ -1,0 +1,7 @@
+There is a much easier way to create elements than as we previously looked at.
+
+Using jsx, we can create elements as follows:
+
+##########
+
+const element = <div className="container">Hello World</div>
