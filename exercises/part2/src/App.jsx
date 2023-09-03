@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Course from "./components/Course";
 
 function App({ notes }) {
   const courses = [
@@ -49,7 +50,9 @@ function App({ notes }) {
 
   return (
     <>
-      <p>good luck</p>
+      {courses.map((course, index) => (
+        <Course key={index} course={course} />
+      ))}
     </>
   );
 }
